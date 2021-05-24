@@ -18,7 +18,7 @@ from sklearn.metrics import roc_auc_score
 from flask_ngrok import run_with_ngrok
 from flask import Flask, Response, request, jsonify, render_template
 
-driver = webdriver.Chrome()
+driver = webdriver.Chrome('chromedriver',options=chrome_options)
 app = Flask(__name__,template_folder='template')
 run_with_ngrok(app)
 
