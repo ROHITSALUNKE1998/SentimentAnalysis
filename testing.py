@@ -17,10 +17,6 @@ from sklearn import naive_bayes
 from sklearn.metrics import roc_auc_score
 from flask_ngrok import run_with_ngrok
 from flask import Flask, Response, request, jsonify, render_template
-!pip install selenium
-!apt-get update # to update ubuntu to correctly run apt install
-!apt install chromium-chromedriver
-!cp /usr/lib/chromium-browser/chromedriver
 import sys
 sys.path.insert(0,'/usr/lib/chromium-browser/chromedriver')
 chrome_options = webdriver.ChromeOptions()
